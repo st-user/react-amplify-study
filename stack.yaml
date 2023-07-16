@@ -38,6 +38,7 @@ Resources:
             Principal:
               Service:
                 - amplify.amazonaws.com
+                - amplify.ap-northeast-1.amazonaws.com
             Action:
               - sts:AssumeRole
       Policies:
