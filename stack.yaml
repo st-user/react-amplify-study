@@ -12,7 +12,7 @@ Parameters:
   Branch:
     Type: String
     Description: Github Repository Branch
-    Default: master
+    Default: main
 
   OauthToken:
     Type: String
@@ -71,7 +71,7 @@ Resources:
       DomainName: !Ref Domain
       AppId: !GetAtt AmplifyApp.AppId
       SubDomainSettings:
-        - Prefix: master
+        - Prefix: main
           BranchName: !GetAtt AmplifyBranch.BranchName
 
 Outputs:
