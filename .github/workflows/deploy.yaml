@@ -58,7 +58,7 @@ jobs:
         no-fail-on-empty-changeset: "1"
         parameter-overrides: >-
           Name=${{ steps.env-name.outputs.environment }},
-          Repository=https://github.com/st-user/react-amplify-study/tree/master,
+          Repository=https://github.com/${{ github.repository }},
           OauthToken=${{ secrets.AMPLIFY_TOKEN }},
           Domain=${{ secrets.AMPLIFY_DOMAIN }}
     # When a domain is configured to the stack,
